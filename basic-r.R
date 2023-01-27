@@ -20,7 +20,7 @@ cat("I am", my_name, "\n")
 
 
 ## Create a numeric variable `my_age` that is equal to your age
-
+my_age <- 21
 
 ## How many seconds is there in a year?  Compute this number!
 ## Assign it to a suitably named variable and print the result
