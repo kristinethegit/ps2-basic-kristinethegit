@@ -25,12 +25,13 @@ my_age <- 21
 ## How many seconds is there in a year?  Compute this number!
 ## Assign it to a suitably named variable and print the result
 ## with a informative message
-
-
+secsinyr <- 365 * 24 * 60 * 60
+secsinyr
 ## What is your age in seconds?  Use the variable 'my_age' you computed
 ## above and seconds-in-year, and compute it.  Assign the result to a
 ## suitable named variable
-
+my_age_in_seconds <- 21 * secsinyr
+cat("There are", my_age_in_seconds, "seconds since I was born", "\n")
 
 ## Are you more than 650M seconds old?  Perform such logical operation and
 ## assign the result to a variable 'I_am_old'.  Print the result with a
