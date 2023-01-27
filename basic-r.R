@@ -31,7 +31,7 @@ secsinyr
 ## above and seconds-in-year, and compute it.  Assign the result to a
 ## suitable named variable
 my_age_in_seconds <- 21 * secsinyr
-cat("There are", my_age_in_seconds, "seconds since I was born", "\n")
+cat("There are", my_age_in_seconds, "seconds in my age", "\n")
 
 ## Are you more than 650M seconds old?  Perform such logical operation and
 ## assign the result to a variable 'I_am_old'.  Print the result with a
