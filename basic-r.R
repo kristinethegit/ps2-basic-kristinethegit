@@ -42,7 +42,7 @@ cat("I am", I_am_old, "older than 650M", "\n")
 
 ### How many seconds is a typical human lifetime?
 
-
+d
 
 ### -------------------- Working with functions --------------------
 
