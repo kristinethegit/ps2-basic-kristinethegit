@@ -52,7 +52,10 @@ secsinlife
 ## This function should return a string value that says something like
 ## "Hello, my name is {name}, and I'm {age} years old".
 ## NB!  It should _return_ the string, not print it!
+myname <- "Kristine"
+myage <- 21
 
+cat("Hello, my name is", myname, "and I am", myage, "years old", "\n")
 
 ## Create a variable `my_intro` by passing your variables `my_name` and `my_age`
 ## into your `make_introduction`
