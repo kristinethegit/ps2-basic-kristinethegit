@@ -36,6 +36,8 @@ cat("There are", my_age_in_seconds, "seconds in my age", "\n")
 ## Are you more than 650M seconds old?  Perform such logical operation and
 ## assign the result to a variable 'I_am_old'.  Print the result with a
 ## suitable message
+I_am_old <- (650000000 / my_age_in_seconds)
+cat("I am", I_am_old, "older than 650M", "\n")
 
 
 ### How many seconds is a typical human lifetime?
