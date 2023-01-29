@@ -36,14 +36,15 @@ cat("There are", my_age_in_seconds, "seconds in my age", "\n")
 ## Are you more than 650M seconds old?  Perform such logical operation and
 ## assign the result to a variable 'I_am_old'.  Print the result with a
 ## suitable message
-I_am_old <- (650000000 / my_age_in_seconds)
-cat("I am", I_am_old, "older than 650M", "\n")
+##I_am_old <- (650000000 / my_age_in_seconds)
+I_am_old <- 650000000 < my_age_in_seconds
+cat("I am older than 650M:", I_am_old, "\n")
 
 
 ### How many seconds is a typical human lifetime?
 
-secsinlife <- 70 * secsinyr
-secsinlife
+avghumanlife <- 70
+cat("avg human life",(avghumanlife * secsinyr), "\n")
 
 ### -------------------- Working with functions --------------------
 
@@ -52,16 +53,20 @@ secsinlife
 ## This function should return a string value that says something like
 ## "Hello, my name is {name}, and I'm {age} years old".
 ## NB!  It should _return_ the string, not print it!
-myname <- "Kristine"
-myage <- 21
 
-cat("Hello, my name is", myname, "and I am", myage, "years old", "\n")
+make_introduction <- function(name, age){
+  cat("Hello, my name is", name, "and I am", age, "years old.", "\n")
+  make_introduction(name = "Kristine", age = 21)
+}
 
 ## Create a variable `my_intro` by passing your variables `my_name` and `my_age`
 ## into your `make_introduction`
 ## function.  Always print the result!
 
-
+make_introduction <- function(name, age){
+  cat("Hello, my name is", name, "and I am", age,"years old.")
+}
+make_introduction
 ## Create a variable `casual_intro` by substituting "Hello, my name is ",
 ## with "Hey, I'm" in your `my_intro`
 ## variable.  Check out stringr functions
@@ -104,14 +109,16 @@ cat("Hello, my name is", myname, "and I am", myage, "years old", "\n")
 ## Create a vector `movies` that contains the names of six movies you like
 ## Always print your results!
 
-
+movies <- c("Les Miserables", "Cinema Paradiso", "Green Book", "Amelie", "Ponyo", "Mother!")
+movies
 ## Create a vector `top_three` that only contains the first three movies in the vector.
 ## Use indexing.
-
+top_three <- c(1, 2, 5)
+movies[top_three]
 
 ## Using your vector and the paste method, create a vector `excited` that adds the phrase -
 ## " is a great movie!" to the end of each element in your movies vector
-
+excited <- paste(movies, "is a great movie")
 
 ## Create a vector `without_four` that has your first three movies, and your 5th and 6th movies.
 
