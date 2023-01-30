@@ -60,28 +60,29 @@ make_introduction <- function(name, age){
 ## Create a variable `my_intro` by passing your variables `my_name` and `my_age`
 ## into your `make_introduction`
 ## function.  Always print the result!
-myintro <- make_introduction(my_name, my_age);
-myintro
+my_intro <- make_introduction(my_name, my_age);
+my_intro
 
 ## Create a variable `casual_intro` by substituting "Hello, my name is ",
 ## with "Hey, I'm" in your `my_intro`
 ## variable.  Check out stringr functions
 ## 'str_replace' and 'str_replace_all'
 
-casual_intro <- str_replace(myintro, "Hello, my name is ", "Hey, I'm")
-str_replace(myintro, "Hello, my name is ", "Hey, I'm ")
+casual_intro <- str_replace(my_intro, "Hello, my name is ", "Hey, I'm ")
+str_replace(my_intro, "Hello, my name is ", "Hey, I'm ")
 
 ## Create a new variable `loud_intro`, which is your `my_intro` variable
 ## in all upper-case letters
 
-loud_intro <- str_replace(myintro, "Hello, my name is ", "Hey, I'm ")
+loud_intro <- str_replace(my_intro, "Hello, my name is ", "Hey, I'm ")
 toupper(casual_intro)
 print(toupper(loud_intro)) 
 
 ## Using the `str_count` function, create a variable `occurrences` that
 ## stores the # of times the letter "e"
 ## appears in `my_intro`
-
+my_intro = "Hello, my name is Kristine and I am 21 years old"
+str_count(my_intro, "e")
 
 ## Write another function `double` that takes in a (numeric) variable
 ## and returns that variable multiplied by two
