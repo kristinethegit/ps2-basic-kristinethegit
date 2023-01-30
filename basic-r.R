@@ -137,16 +137,19 @@ without_4 <- c(1, 2, 3, 5, 6)
 movies[without_4]
 
 ## Create a vector `numbers` that is the numbers 70 through 79
-
+numbers <- c(70:79)
+numbers
 
 ## Using the built in length function, create a variable `len` that
 ## is equal to the length of your vector
 ## `numbers`
-
+len = length(numbers)
+len
 
 ## Using the `mean` function, create a variable `numbers_mean` that
 ## is the mean of your vector `numbers`
-
+numbers_mean <- mean(numbers)
+numbers_mean
 
 ## Create a vector `lower_numbers` that is the numbers 60:69
 
