@@ -84,19 +84,26 @@ str_count(my_intro, "e")
 
 ## Write another function `double` that takes in a (numeric) variable
 ## and returns that variable multiplied by two
-double <- str_count(my_intro, "e") * 2
-print(double)
+double <- function(x){
+  return (x*2);
+}
+doubleNumE <- double(str_count(my_intro, "e"))
+print(doubleNumE)
+
 
 ## Using your `double` function, create a variable `seconds_in_two_years`,
 ## which is the number of seconds in two years.
 ## Always print your results!
-seconds_in_two_years <- double
+seconds_in_two_years <- double(secsinyr)
 print(seconds_in_two_years)
 
 ## Write another function `cube` that takes in a value and returns that value
 ## cubed
-
-
+cube <- function(x){
+  return (x^3)
+}
+cubedNum <- cube(3)
+cubedNum
 ## Create a (suitably named) variable by passing the number 3 to your `cube`
 ## function
 
