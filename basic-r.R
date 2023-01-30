@@ -27,6 +27,7 @@ my_age <- 21
 ## with a informative message
 secsinyr <- 365 * 24 * 60 * 60
 secsinyr
+
 ## What is your age in seconds?  Use the variable 'my_age' you computed
 ## above and seconds-in-year, and compute it.  Assign the result to a
 ## suitable named variable
@@ -42,7 +43,6 @@ cat("I am older than 650M:", I_am_old, "\n")
 
 
 ### How many seconds is a typical human lifetime?
-
 avghumanlife <- 70
 cat("avg human life",(avghumanlife * secsinyr), "\n")
 
@@ -67,13 +67,11 @@ my_intro
 ## with "Hey, I'm" in your `my_intro`
 ## variable.  Check out stringr functions
 ## 'str_replace' and 'str_replace_all'
-
 casual_intro <- str_replace(my_intro, "Hello, my name is ", "Hey, I'm ")
 str_replace(my_intro, "Hello, my name is ", "Hey, I'm ")
 
 ## Create a new variable `loud_intro`, which is your `my_intro` variable
 ## in all upper-case letters
-
 loud_intro <- str_replace(my_intro, "Hello, my name is ", "Hey, I'm ")
 toupper(casual_intro)
 print(toupper(loud_intro)) 
@@ -88,10 +86,12 @@ str_count(my_intro, "e")
 ## and returns that variable multiplied by two
 double <- str_count(my_intro, "e") * 2
 print(double)
+
 ## Using your `double` function, create a variable `seconds_in_two_years`,
 ## which is the number of seconds in two years.
 ## Always print your results!
-
+seconds_in_two_years <- double
+print(seconds_in_two_years)
 
 ## Write another function `cube` that takes in a value and returns that value
 ## cubed
