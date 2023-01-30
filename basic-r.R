@@ -74,6 +74,9 @@ str_replace(myintro, "Hello, my name is ", "Hey, I'm ")
 ## Create a new variable `loud_intro`, which is your `my_intro` variable
 ## in all upper-case letters
 
+loud_intro <- str_replace(myintro, "Hello, my name is ", "Hey, I'm ")
+toupper(casual_intro)
+print(toupper(loud_intro)) 
 
 ## Using the `str_count` function, create a variable `occurrences` that
 ## stores the # of times the letter "e"
