@@ -102,17 +102,19 @@ print(seconds_in_two_years)
 cube <- function(x){
   return (x^3)
 }
-cubedNum <- cube(3)
-cubedNum
+
 ## Create a (suitably named) variable by passing the number 3 to your `cube`
 ## function
-
+threecubed <- cube(3)
+threecubed
 
 ## Use for-loop to print cubes of numbers 1..10
 ## Hint: see course book
 # https://faculty.washington.edu/otoomet/info201-book/functions.html#for-loops
-
-
+for(i in 1:10)
+{
+  print(cube(i))
+}
 ### ------------------------------ working with vectors ------------------------------
 
 ## Create a vector `movies` that contains the names of six movies you like
