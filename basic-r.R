@@ -133,7 +133,7 @@ excited <- paste(movies, " is a great movie!", sep="")
 excited
 
 ## Create a vector `without_four` that has your first three movies, and your 5th and 6th movies.
-without_4 <- c(1, 2, 3, 5, 6)
+without_4 <- -c(4)
 movies[without_4]
 
 ## Create a vector `numbers` that is the numbers 70 through 79
@@ -152,29 +152,34 @@ numbers_mean <- mean(numbers)
 numbers_mean
 
 ## Create a vector `lower_numbers` that is the numbers 60:69
-
+lower_numbers <- c(60:69)
+lower_numbers
 
 ## Create a vector `all_numbers` that combines your `lower_numbers` and `numbers` vectors
 ## Ensure the result looks right!
-
+all_numbers <- c(lower_numbers, numbers)
+all_numbers
 
 ## Which numbers (out of all_numbers) are larger than 70?
 ## Use logical operations to create a logical
 ## vector (TRUES/FALSES) that tell which number is larger
-
-
+greaterThan70 <- all_numbers > 70
+greaterThan70
 ## Out of your all numbers, extract only those that are
 ## smaller than 70
-
+lessThan70 <- all_numbers < 70 
+lessThan70
 
 ## Compute squares of all those numbers that are smaller
 ## than 70 in your vector
-
+squaresLessThan70 <- all_numbers[lessThan70]^2
+squaresLessThan70
 
 ## Compute modulo by 2 of all your numbers.
 ## Hint: check out the modulo operator '%%'
-
-
+mod2 <- all_numbers %% 2 == 0
+mod2
 ## Print even numbers only in your vector.
 ## Do _not_ create the subvector manually, use modulo operator and logical
 ## indexing to extract the even numbers!
+all_numbers[mod2]
