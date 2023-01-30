@@ -14,7 +14,7 @@
 ## Here we ask you to define, compute, and print a number of variables
 ## ---------- Example: ----------
 ## Create variable `my_name` that is equal to your first name
-my_name <- "Ott"
+my_name <- "Kristine"
 cat("I am", my_name, "\n")
 ## ---------- end of the example ----------
 
@@ -53,27 +53,23 @@ cat("avg human life",(avghumanlife * secsinyr), "\n")
 ## This function should return a string value that says something like
 ## "Hello, my name is {name}, and I'm {age} years old".
 ## NB!  It should _return_ the string, not print it!
-
 make_introduction <- function(name, age){
   return <- paste("Hello, my name is", name, "and I am", age, "years old.")
 }
-myintro <- make_introduction("Kristine", 21);
-myintro
 
 ## Create a variable `my_intro` by passing your variables `my_name` and `my_age`
 ## into your `make_introduction`
 ## function.  Always print the result!
-
-make_introduction <- function(name = "Kristine", age = 21){
-  cat("Hello, my name is", name, "and I am", age,"years old.")
-}
-make_introduction(name, age)
+myintro <- make_introduction(my_name, my_age);
+myintro
 
 ## Create a variable `casual_intro` by substituting "Hello, my name is ",
 ## with "Hey, I'm" in your `my_intro`
 ## variable.  Check out stringr functions
 ## 'str_replace' and 'str_replace_all'
 
+casual_intro <- str_replace(myintro, "Hello, my name is ", "Hey, I'm")
+str_replace(myintro, "Hello, my name is ", "Hey, I'm ")
 
 ## Create a new variable `loud_intro`, which is your `my_intro` variable
 ## in all upper-case letters
@@ -164,26 +160,3 @@ excited <- paste(movies, "is a great movie")
 ## Print even numbers only in your vector.
 ## Do _not_ create the subvector manually, use modulo operator and logical
 ## indexing to extract the even numbers!
-
-
-
-### ------------------ Challenge ------------------
-## Write a function `remove_digits` that will remove all digits
-## (i.e. characters '0' through '9')
-## from all elements in a
-## *vector of strings*.
-## For instance, "a2b" -> "ab"
-
-
-## Demonstrate that your approach is successful by passing a
-## vector of courses to your function
-## For example,
-## RemoveDigits(c("INFO 201", "CSE 142", "mps-803c", "K2-team '21"))
-## should return
-## c("INFO "    "CSE "     "mps-c"    "K-team '")
-
-
-## Write an if/else statement that checks to see if your vector has any digits.
-## If it does have
-## digits, print "Oh no!", if it does not then print "Yay!"
-## Hint: check out the functions 'any' and 'all'
