@@ -129,7 +129,8 @@ movies[top_three]
 
 ## Using your vector and the paste method, create a vector `excited` that adds the phrase -
 ## " is a great movie!" to the end of each element in your movies vector
-excited <- paste(movies, "is a great movie")
+excited <- paste(movies, " is a great movie!", sep="")
+excited
 
 ## Create a vector `without_four` that has your first three movies, and your 5th and 6th movies.
 
