@@ -57,7 +57,7 @@ cat("avg human life",(avghumanlife * secsinyr), "\n")
 make_introduction <- function(name, age){
   return <- paste("Hello, my name is", name, "and I am", age, "years old.")
 }
-myintro <- make_introduction("kristine", 21);
+myintro <- make_introduction("Kristine", 21);
 myintro
 
 ## Create a variable `my_intro` by passing your variables `my_name` and `my_age`
