@@ -133,7 +133,8 @@ excited <- paste(movies, " is a great movie!", sep="")
 excited
 
 ## Create a vector `without_four` that has your first three movies, and your 5th and 6th movies.
-
+without_4 <- c(1, 2, 3, 5, 6)
+movies[without_4]
 
 ## Create a vector `numbers` that is the numbers 70 through 79
 
