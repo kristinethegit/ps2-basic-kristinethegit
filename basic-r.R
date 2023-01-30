@@ -86,8 +86,8 @@ str_count(my_intro, "e")
 
 ## Write another function `double` that takes in a (numeric) variable
 ## and returns that variable multiplied by two
-
-
+double <- str_count(my_intro, "e") * 2
+print(double)
 ## Using your `double` function, create a variable `seconds_in_two_years`,
 ## which is the number of seconds in two years.
 ## Always print your results!
