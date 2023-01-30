@@ -55,18 +55,20 @@ cat("avg human life",(avghumanlife * secsinyr), "\n")
 ## NB!  It should _return_ the string, not print it!
 
 make_introduction <- function(name, age){
-  cat("Hello, my name is", name, "and I am", age, "years old.", "\n")
-  make_introduction(name = "Kristine", age = 21)
+  return <- paste("Hello, my name is", name, "and I am", age, "years old.")
 }
+myintro <- make_introduction("kristine", 21);
+myintro
 
 ## Create a variable `my_intro` by passing your variables `my_name` and `my_age`
 ## into your `make_introduction`
 ## function.  Always print the result!
 
-make_introduction <- function(name, age){
+make_introduction <- function(name = "Kristine", age = 21){
   cat("Hello, my name is", name, "and I am", age,"years old.")
 }
-make_introduction
+make_introduction(name, age)
+
 ## Create a variable `casual_intro` by substituting "Hello, my name is ",
 ## with "Hey, I'm" in your `my_intro`
 ## variable.  Check out stringr functions
